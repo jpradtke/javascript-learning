@@ -36,9 +36,10 @@ function message() {
 
 // IF Example
 
-if (condition) {
+/*if (condition) {
     //If condition is true, what happens?
 }
+*/
 
 function checkName(first, last) {
     if (first == "Jan") {
@@ -48,3 +49,70 @@ function checkName(first, last) {
         console.log("Zonk!");
     }
 };
+
+//GOLF SCORE
+
+/*
+Strokes     Return
+1           Hole in One
+<= par - 2  Eagle
+par - 1     Birdie
+par         Par
+par + 1     Bogey
+par + 2     Double Bogey
+>= par + 3  Go Home!
+*/
+
+var names = ["Hole In One!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+
+function golfScore(par, strokes) {
+    if (strokes == 1) {
+        return names[0];
+    }
+    else if (strokes <= par -2 ) {
+        return names[1]
+    }
+    else if (strokes == par -1 ) {
+        return names[2]
+    }
+    else if (strokes == par ) {
+        return names[3]
+    }
+    else if (strokes == par + 1 ) {
+        return names[4]
+    }
+    else if (strokes == par + 2 ) {
+        return names[5]
+    }
+    else if (strokes >= par + 3 ) {
+        return names[6]
+    }
+    else {
+        return "Something went wrong";
+    }
+}
+
+console.log(golfScore(6,8));
+
+//Switch function
+
+function switchFunction(test) {
+    var answer = "";
+
+    switch(test) {
+        case 1:
+           answer = "alpha";
+           break;
+           case 2:
+               answer =  "beta";
+               break;
+               case 3:
+                   answer = "gamma";
+                   break;
+
+    }
+    return answer;
+}
+
+console.log(switchFunction(2));
