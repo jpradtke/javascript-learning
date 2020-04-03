@@ -1,5 +1,5 @@
 //example
-function functionName(){
+function functionName() {
     console.log("Hello World!"); //command
 };
 
@@ -26,6 +26,25 @@ function addFamilyMember(myFirstName, myLastName, myBirthDate) {
     console.log(family);
 }
 
-addFamilyMember("Jan Peter", "Radtke", "24.10.1988");
-addFamilyMember("Christina", "Lerche", "190.05.1990");
-addFamilyMember("Elke", "Radtke", "01.10.1957");
+//setTimeout(addFamilyMember("Jan Peter", "Radtke", "24.10.1988"), 10000);
+//setTimeout(addFamilyMember("Christina", "Lerche", "190.05.1990"), 10000);
+//setTimeout(addFamilyMember("Elke", "Radtke", "01.10.1957"), 10000);
+
+function message() {
+    alert("Hello");
+};
+
+// IF Example
+
+if (condition) {
+    //If condition is true, what happens?
+}
+
+function checkName(first, last) {
+    if (first == "Jan") {
+        console.log("Gut gemacht Jan");
+    }
+    else {
+        console.log("Zonk!");
+    }
+};
