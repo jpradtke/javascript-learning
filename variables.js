@@ -55,6 +55,10 @@ console.log(firstLetterOfFirstString);
 var lastLetterOfAString = firstString[firstString.length -1];
 console.log(lastLetterOfAString);
 
+var array = [[1,2,3], [4,5,6], [7,8,9]];
+
+console.log(array[1][2]); // show a six
+
 var myArray = [
     {
         firstName: "Christina",
@@ -67,6 +71,36 @@ var myArray = [
         birthDate: "24.10.1988"
     }
 ];
+
+console.log(myArray);
+
+myArray.push( //add to the end off the array
+    {
+        firstName: "Klaudia",
+        lastName: "Lerche",
+        birthDate: "31.09.1958"
+    }
+)
+
+console.log(myArray);
+
+var Klaudia = myArray.pop(); //remove last item
+
+console.log(Klaudia);
+console.log(myArray);
+
+var Chrissi = myArray.shift(); // remove first item
+console.log(Chrissi);
+console.log(myArray);
+
+myArray.unshift( //add to the beginning of the array
+    {
+        firstName: "Elke",
+        lastName: "Radtke",
+        birthDate: "01.10.1957"
+    }
+);
+console.log(myArray);
 
 console.log(myArray[0].firstName, myArray[0].lastName, myArray[0].birthDate);
 console.log(myArray[1].firstName, myArray[1].lastName, myArray[1].birthDate);
