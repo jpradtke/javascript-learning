@@ -110,9 +110,20 @@ function switchFunction(test) {
                case 3:
                    answer = "gamma";
                    break;
+                   default: 
+                   answer = "something went wrong - please enter a different value";
+                   break;
 
     }
     return answer;
 }
 
-console.log(switchFunction(2));
+console.log(switchFunction(8));
+
+//return Boolean
+
+function boolean(a,b) {
+    return a < b;
+}
+
+console.log(boolean(20,15));
